@@ -1017,7 +1017,6 @@
             <button class="hora-btn" onclick="selectHora(this,'19:00')">19:00</button>
             <button class="hora-btn" onclick="selectHora(this,'20:00')">20:00</button>
             <button class="hora-btn" onclick="selectHora(this,'21:00')">21:00</button>
-            <button class="hora-btn" onclick="selectHora(this,'22:00')">21:30</button>
           </div>
         </div>
       </div>
@@ -1197,7 +1196,7 @@
     <div class="footer-motto">"Arte en cada corte"</div>
   </div>
   <div class="footer-copy">
-    © 2025 Lexand Barbershop<br>
+    © 2026 Lexand Barber<br>
     Todos los derechos reservados
   </div>
 </footer>
@@ -1328,17 +1327,17 @@
     const fechaTexto = `${parseInt(d)} de ${meses[parseInt(m)-1]} de ${y}`;
 
     let msg =
-      `✂️ *RESERVA — LEXAND BARBERSHOP*\n\n` +
-      `👤 *Nombre:* ${state.nombre}\n` +
-      `📱 *Teléfono:* ${state.tel}\n\n` +
-      `💈 *Servicio:* ${state.servicio} (${state.precio})\n` +
-      `✂️ *Barbero:* ${state.barbero}\n` +
-      `📅 *Fecha:* ${fechaTexto}\n` +
-      `🕐 *Hora:* ${state.hora} hrs\n`;
+      `RESERVA — LEXAND BARBER\n\n` +
+      `Nombre: ${state.nombre}\n` +
+      `Teléfono: ${state.tel}\n\n` +
+      `Servicio: ${state.servicio} (${state.precio})\n` +
+      `Barbero: ${state.barbero}\n` +
+      `Fecha: ${fechaTexto}\n` +
+      `Hora: ${state.hora} hrs\n`;
 
-    if (notas) msg += `\n📝 *Notas:* ${notas}\n`;
+    if (notas) msg += `\n Notas: ${notas}\n`;
 
-    msg += `\n_Reserva realizada desde la web de Lexand Barbershop_ 🌐`;
+    msg += `\n_Reserva realizada desde la web de Lexand Barber`;
 
     const url = `https://wa.me/${numeroWP}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
